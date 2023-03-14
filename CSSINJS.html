@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Document</title>
+ <style>
+    *
+    {
+        padding: 0px;
+        margin:0px;
+    }
+    body{
+        width:100vw;
+        height: 100vh;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+ </style>
+</head>
+<body id="b">
+    <input id="a" onfocus="focusOnTheInput()" onblur="onblurOnTheInput()">
+    <script>
+         function focusOnTheInput()
+       {
+        document.getElementById("a").style.backgroundColor="lime"
+        document.getElementById("b").style.backgroundImage="radial-gradient(black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white,black,white)"
+       }
+       function onblurOnTheInput()
+       {
+        document.getElementById("a").style.backgroundColor="white"
+        document.getElementById("b").style.backgroundImage="none"
+       }
+     </script>
+</body>
+</html>

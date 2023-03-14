@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Document</title>
+</head>
+<body>
+    <input type="password" id="pass" oninput="pass()">
+    <h3 id="status"></h3>
+    <script>
+        function pass()
+        {
+            var p=document.getElementById("pass").value
+       var lenp=p.length
+       if(lenp==0)
+        {
+    document.getElementById("status").innerHTML=""        
+        }   
+     else if(lenp>=1&&lenp<6)
+     {
+        document.getElementById("status").innerHTML="weakpassword"
+     }
+     else if(lenp>=6&&lenp<10)
+     {
+        document.getElementById("status").innerHTML="goodpassword"
+     }
+     else
+     {
+        document.getElementById("status").innerHTML="strongpassword"
+     }
+     }
+    </script>
+</body>
+</html>

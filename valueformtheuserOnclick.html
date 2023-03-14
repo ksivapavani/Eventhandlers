@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+</head>
+<body>
+ <input id="a" placeholder="Enter anything">
+ <br>
+ <input type="button" value="ClickHere!!!" onclick="msg()">
+ <h1 id="result"></h1>   
+<script>
+    function msg()
+    {
+        var userinput=document.getElementById("a").value
+        document.getElementById("result").innerHTML=userinput
+    }
+</script>
+</body>
+</html>

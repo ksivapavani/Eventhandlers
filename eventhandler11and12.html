@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+   <style>
+    *
+    {
+        padding:0px;
+        margin:0px;
+    }
+    body
+    {
+     width:100vw;
+     height:100vh;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+    }
+    #container
+    {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width:300px;
+        height:300px;
+        border: 2px solid black;
+        border-radius: 100%;
+    }
+    #a
+    {
+       width:80%;
+       height:30px;
+    }
+   </style>
+</head>
+<body id="b">
+  <div id="container">
+    <input id="a" onfocus="foc()" onblur="nonfoc()">
+  </div>  
+  <script>
+    function fun()
+    {
+        document.getElementById("b").style.backgroundColor="Black"
+        document.getElementById("container").style.backgroundImage="radial-gradient(red,black,red,black,red,black,red,black,red,black,red,black,red,black,red,black,red,black,red,black,red,black,red,black)"
+        document.getElementById("a").style.backgroundColor="lime"
+    }
+    function nonfun()
+    {
+        document.getElementById("b").style.backgroundColor="white"
+        document.getElementById("container").style.backgroundImage="none"
+        document.getElementById("a").style.backgroundColor="white" 
+    }
+  </script>
+</body>
+</html>

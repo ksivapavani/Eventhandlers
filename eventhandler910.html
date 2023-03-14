@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Document</title>
+ <style>
+    div
+    {
+        width:100px;
+        height:100px;
+        background-color:violet;
+        border-radius: 100%;
+        position: relative;
+    }
+    h1
+    {
+        position: relative;
+        left:80px;
+        bottom:90px;
+        background-color: yellow;
+        display:inline-block;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px black;
+        z-index: -1;
+    }
+ </style>
+</head>
+<body>
+       <div onmouseover="overtheelement()" onmouseout="movethepointer()" ></div> 
+    <h1 id="a"></h1>
+    <script>
+        function overtheelement()
+        {
+              document.getElementById("a").innerHTML="welcome to webpage"
+        }
+        function movethepointer()
+        {
+              document.getElementById("a").innerHTML=""
+        }
+    </script>
+</body>
+</html>

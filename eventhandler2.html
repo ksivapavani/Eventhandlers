@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+    <input type="password" id="a" oninput="fun()">
+    <br>
+     <input type="button" value="login" >
+    <h1 id="message"></h1>
+    <script>
+        function fun()
+        {  
+            var password="1234"
+            var pass=document.getElementById("a").value
+            if(password==pass)
+            {
+                document.getElementById("message").innerHTML="correct password"        
+            }
+            else
+            {
+                document.getElementById("message").innerHTML="wrong password"  
+            }
+        }
+    </script>
+</body>
+</html>
